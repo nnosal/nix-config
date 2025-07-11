@@ -16,7 +16,7 @@
   services.zfs.autoScrub.enable = true;
 
   time.timeZone = "America/New_York";
-  users.users.alex = {
+  users.users.nnosal = {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" ];
   };
@@ -163,7 +163,7 @@
       "guest ok" = "yes";
       "create mask" = "0644";
       "directory mask" = "0755";
-      "force user" = "alex";
+      "force user" = "nnosal";
       "force group" = "users";
     };
     in {

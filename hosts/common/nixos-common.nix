@@ -3,13 +3,13 @@ let
   inherit (inputs) nixpkgs nixpkgs-unstable;
 in
 {
-  time.timeZone = "America/New_York";
+  time.timeZone = "Europe/Paris";
   system.stateVersion = stateVersion;
 
   # home-manager = {
   #     useGlobalPkgs = true;
   #     useUserPackages = true;
-  #     users.alex = import ../../../home/alex.nix;
+  #     users.nnosal = import ../../../home/nnosal.nix;
   # };
 
   virtualisation = {

@@ -43,8 +43,8 @@
 
   programs.git = {
     enable = true;
-    userEmail = "alexktz@gmail.com";
-    userName = "Alex Kretzschmar";
+    userEmail = "nicolas.nosal@gmail.com";
+    userName = "Nicolas NOSAL";
     diff-so-fancy.enable = true;
     lfs.enable = true;
     extraConfig = {
@@ -165,12 +165,12 @@
       # wd
       "dev" = {
         hostname = "100.68.216.79";
-        user = "alex";
+        user = "nnosal";
       };
       # lancs
       # "e elrond" = {
       #   hostname = "100.117.223.78";
-      #   user = "alexktz";
+      #   user = "nnosalktz";
       # };
       # # jb
       # "core" = {

@@ -35,16 +35,19 @@
     in {
 
       darwinConfigurations = {
+        # test
+        mbavm1 = libx.mkDarwin { hostname = "mbavm1"; };
+
         # personal
-        slartibartfast = libx.mkDarwin { hostname = "slartibartfast"; };
-        nauvis = libx.mkDarwin { hostname = "nauvis"; };
-        mac-studio = libx.mkDarwin { hostname = "mac-studio"; };
-        mac-mini = libx.mkDarwin { hostname = "mac-mini"; };
-        mooncake = libx.mkDarwin { hostname = "mooncake"; };
+        #slartibartfast = libx.mkDarwin { hostname = "slartibartfast"; };
+        #nauvis = libx.mkDarwin { hostname = "nauvis"; };
+        #mac-studio = libx.mkDarwin { hostname = "mac-studio"; };
+        #mac-mini = libx.mkDarwin { hostname = "mac-mini"; };
+        #mooncake = libx.mkDarwin { hostname = "mooncake"; };
 
         # work
-        baldrick = libx.mkDarwin { hostname = "baldrick"; };
-        magrathea = libx.mkDarwin { hostname = "magrathea"; };
+        #baldrick = libx.mkDarwin { hostname = "baldrick"; };
+        #magrathea = libx.mkDarwin { hostname = "magrathea"; };
       };
 
       colmena = {
@@ -66,7 +69,7 @@
         nvllama = import ./hosts/nixos/nvllama;
 
         # test system
-        # yeager = nixosSystem "x86_64-linux" "yeager" "alex";
+        # yeager = nixosSystem "x86_64-linux" "yeager" "nnosal";
       };
 
     };

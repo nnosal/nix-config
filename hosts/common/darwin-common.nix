@@ -3,7 +3,7 @@ let
   inherit (inputs) nixpkgs nixpkgs-unstable;
 in
 {
-  users.users.alex.home = "/Users/alex";
+  users.users.nnosal.home = "/Users/nnosal";
 
   nix = {
     settings = {
@@ -15,7 +15,7 @@ in
   system.stateVersion = 5;
 
   # Set primary user for system-wide activation
-  system.primaryUser = "alex";
+  system.primaryUser = "nnosal";
 
   nixpkgs = {
     config.allowUnfree = true;
@@ -73,32 +73,32 @@ in
     global.autoUpdate = true;
 
     brews = [
-      "bitwarden-cli"
+      #"bitwarden-cli"
       #"borders"
     ];
     taps = [
       #"FelixKratz/formulae" #sketchybar
     ];
     casks = [
-      "screenflow"
-      "cleanshot"
+      #"screenflow"
+      #"cleanshot"
       "adobe-creative-cloud"
       #"nikitabobko/tap/aerospace"
-      "alacritty"
-      "alcove"
-      "audacity"
+      #"alacritty"
+      #"alcove"
+      #"audacity"
       #"balenaetcher"
-      "bambu-studio"
-      "bentobox"
+      #"bambu-studio"
+      #"bentobox"
       #"clop"
       "discord"
-      "displaylink"
+      #"displaylink"
       #"docker"
-      "element"
-      "elgato-camera-hub"
-      "elgato-control-center"
-      "elgato-stream-deck"
-      "firefox"
+      #"element"
+      #"elgato-camera-hub"
+      #"elgato-control-center"
+      #"elgato-stream-deck"
+      #"firefox"
       "flameshot"
       "font-fira-code"
       "font-fira-code-nerd-font"
@@ -108,70 +108,70 @@ in
       "font-meslo-lg-nerd-font"
       "ghostty"
       "google-chrome"
-      "iina"
-      "istat-menus"
-      "iterm2"
+      #"iina"
+      #"istat-menus"
+      #"iterm2"
       "jordanbaird-ice"
-      "lm-studio"
-      "logitech-options"
-      "macwhisper"
-      "marta"
-      "mqtt-explorer"
-      "music-decoy" # github/FuzzyIdeas/MusicDecoy
-      "nextcloud"
+      #"lm-studio"
+      #"logitech-options"
+      #"macwhisper"
+      #"marta"
+      #"mqtt-explorer"
+      #"music-decoy" # github/FuzzyIdeas/MusicDecoy
+      #"nextcloud"
       "notion"
-      "obs"
-      "obsidian"
-      "ollama"
-      "omnidisksweeper"
+      #"obs"
+      #"obsidian"
+      #"ollama"
+      #"omnidisksweeper"
       "orbstack"
-      "openscad"
-      "openttd"
-      "plexamp"
-      "popclip"
-      "prusaslicer"
+      #"openscad"
+      #"openttd"
+      #"plexamp"
+      #"popclip"
+      #"prusaslicer"
       "raycast"
       "signal"
       "shortcat"
       "slack"
-      "spotify"
-      "steam"
-      "tailscale"
+      #"spotify"
+      #"steam"
+      #"tailscale"
       #"wireshark"
-      "viscosity"
+      #"viscosity"
       "visual-studio-code"
       "vlc"
       # "lm-studio"
 
       # # rogue amoeba
-      "audio-hijack"
-      "farrago"
-      "loopback"
-      "soundsource"
+      #"audio-hijack"
+      #"farrago"
+      #"loopback"
+      #"soundsource"
     ];
     masApps = {
-      "Amphetamine" = 937984704;
-      "AutoMounter" = 1160435653;
-      "Bitwarden" = 1352778147;
-      "Creator's Best Friend" = 1524172135;
+#      "Amphetamine" = 937984704;
+#      "AutoMounter" = 1160435653;
+#      "Bitwarden" = 1352778147;
+#      "Creator's Best Friend" = 1524172135;
       "DaVinci Resolve" = 571213070;
       "Disk Speed Test" = 425264550;
-      "Fantastical" = 975937182;
-      "Ivory for Mastodon by Tapbots" = 6444602274;
-      "Home Assistant Companion" = 1099568401;
-      "Microsoft Remote Desktop" = 1295203466;
-      "Perplexity" = 6714467650;
-      "Resize Master" = 102530679;
-      "rCmd" = 1596283165;
-      "Snippety" = 1530751461;
+#      "Fantastical" = 975937182;
+#      "Ivory for Mastodon by Tapbots" = 6444602274;
+#      "Home Assistant Companion" = 1099568401;
+#      "Microsoft Remote Desktop" = 1295203466;
+#      "Perplexity" = 6714467650;
+#      "Resize Master" = 102530679;
+#      "rCmd" = 1596283165;
+#      "Snippety" = 1530751461;
       #"Tailscale" = 1475387142;
-      "Telegram" = 747648890;
-      "The Unarchiver" = 425424353;
-      "Todoist" = 585829637;
+#      "Telegram" = 747648890;
+#      "The Unarchiver" = 425424353;
+#      "Todoist" = 585829637;
       "UTM" = 1538878817;
       "Wireguard" = 1451685025;
 
-      "Final Cut Pro" = 424389933;
+#      "Final Cut Pro" = 424389933;
 
       # these apps only available via uk apple id
       #"Logic Pro" = 634148309;
@@ -180,9 +180,9 @@ in
       #"ShutterCount" = 720123827;
       #"Teleprompter" = 1533078079;
 
-      "Keynote" = 409183694;
-      "Numbers" = 409203825;
-      "Pages" = 409201541;
+#      "Keynote" = 409183694;
+#      "Numbers" = 409203825;
+#      "Pages" = 409201541;
     };
   };
 

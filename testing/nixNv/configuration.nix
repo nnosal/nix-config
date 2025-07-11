@@ -26,9 +26,9 @@
   #services.xserver.displayManager.gdm.enable = true;
   #services.xserver.desktopManager.gnome.enable = true;
 
-  users.users.alex = {
+  users.users.nnosal = {
     isNormalUser = true;
-    description = "alex";
+    description = "nnosal";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [];
   };
@@ -76,7 +76,7 @@
   fileSystems."/mnt/jbod" = {
     device = "//10.42.1.10/jbod";
     fsType = "cifs";
-    options = [ "username=alex" "password=awdpign23" "x-systemd.automount" "noauto" ];
+    options = [ "username=nnosal" "password=awdpign23" "x-systemd.automount" "noauto" ];
   };
 
   system.stateVersion = "23.11"; # Did you read the comment?

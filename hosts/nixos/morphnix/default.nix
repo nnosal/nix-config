@@ -37,8 +37,8 @@
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   #home-manager.backupFileExtension = "bak";
-  home-manager.users.alex = { imports = [ ./../../../home/alex.nix ]; };
-  users.users.alex = {
+  home-manager.users.nnosal = { imports = [ ./../../../home/nnosal.nix ]; };
+  users.users.nnosal = {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" "render" "video"];
     packages = with pkgs; [
@@ -254,7 +254,7 @@
         "guest ok" = "yes";
         "create mask" = "0644";
         "directory mask" = "0755";
-        "force user" = "alex";
+        "force user" = "nnosal";
         "force group" = "users";
       };
     in {

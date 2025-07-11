@@ -18,10 +18,10 @@ export SOPS_AGE_KEY_FILE=~/.config/sops/age/keys.txt
 
 # path fix for homebrew
 export PATH=$PATH:/opt/homebrew/bin/
-export PATH=$PATH:/Users/alex/go/bin
+export PATH=$PATH:/Users/nnosal/go/bin
 #export EDITOR=vi
-export VISUAL=/etc/profiles/per-user/alex/bin/nvim
-export EDITOR=/etc/profiles/per-user/alex/bin/nvim
+export VISUAL=/etc/profiles/per-user/nnosal/bin/nvim
+export EDITOR=/etc/profiles/per-user/nnosal/bin/nvim
 export TERM=xterm
 
 # Nix
@@ -55,4 +55,4 @@ eval "$(starship init zsh)"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias ghostty="/Applications/Ghostty.app/Contents/MacOS/ghostty"
 
-#/Users/alex/go/bin/figurine -f "Doom.flf" magrathea
+#/Users/nnosal/go/bin/figurine -f "Doom.flf" magrathea

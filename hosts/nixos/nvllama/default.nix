@@ -5,7 +5,7 @@
     [
       inputs.sops-nix.nixosModules.sops
       ./hardware-configuration.nix
-      #./../../../home/alex.nix
+      #./../../../home/nnosal.nix
       ./../../common/nixos-common.nix
       ./../../common/common-packages.nix
       #./beszel.nix
@@ -83,10 +83,10 @@
   # userland
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
-  home-manager.users.alex = { imports = [ ./../../../home/alex.nix ]; };
-  users.users.alex = {
+  home-manager.users.nnosal = { imports = [ ./../../../home/nnosal.nix ]; };
+  users.users.nnosal = {
     isNormalUser = true;
-    description = "alex";
+    description = "nnosal";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       home-manager
