@@ -41,4 +41,3 @@ Ignore insecure directories and files and continue [y] or abort compinit [n]?` =
 - ⚠️ Au préalable, il est obligatoire d'autoriser manuellement "terminal" dans les paramètres de sécurité et confidentialité (accès au disque complet) de macOS pour que les commandes d'installations fonctionnent correctement.
 - Après l'installation de nix, il est nécessaire de redémarrer le terminal pour que les changements soient pris en compte.
 - Après l'installation de la configuration, les icônes du dock peuvent être avec un point d'interrogation, il suffit de le redémarrer: `killall Dock`.
-- 
