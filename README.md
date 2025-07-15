@@ -4,12 +4,14 @@
 Test de configuration de mac via nix manager.
 
 ```bash
-# Prepare
-xcode-select --install && cd /tmp && git clone https://github.com/nnosal/nix-config && cd $_
-#softwareupdate --install-rosetta
+# Prerequisites
+xcode-select --install # softwareupdate --install-rosetta
+sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install)
+# Get machines config (nix)
+cd /tmp && git clone https://github.com/nnosal/nix-config nix-config && cd $_
 # Build
-nix-config % nix --extra-experimental-features 'nix-command flakes'  build ".#darwinConfigurations.mbavm1.system"
-# Run terraforming machine
+nix --extra-experimental-features 'nix-command flakes'  build ".#darwinConfigurations.mbavm1.system"
+# Run terraforming machine...
 sudo ./result/sw/bin/darwin-rebuild switch --flake ".#mbavm1"
 ```
 
@@ -34,3 +36,6 @@ chmod +x list_unmanaged_apps.sh && ./list_unmanaged_apps.sh
 
 - `zsh compinit: insecure directories and files, run compaudit for list.
 Ignore insecure directories and files and continue [y] or abort compinit [n]?` => `compaudit | xargs "sudo chown $(whoami) && sudo chmod go-w"`
+- ⚠️ Au préalable, il est obligatoire d'autoriser manuellement "terminal" dans les paramètres de sécurité et confidentialité (accès au disque complet) de macOS pour que les commandes d'installations fonctionnent correctement.
+- Après l'installation de nix, il est nécessaire de redémarrer le terminal pour que les changements soient pris en compte.
+- Après l'installation de la configuration, les icônes du dock peuvent être avec un point d'interrogation, il suffit de le redémarrer: `killall Dock`.

@@ -70,6 +70,10 @@ in
       autoUpdate = true;
       upgrade = true;
     };
+    caskArgs = { 
+      no_quarantine = true; # disable quarantine for casks
+    };
+    
     global.autoUpdate = true;
 
     brews = [
@@ -149,6 +153,8 @@ in
       "visual-studio-code"
       "vlc"
       "rustdesk"
+      "kopiaui"
+      "grayjay"
     ];
     masApps = {
 #      "Amphetamine" = 937984704;

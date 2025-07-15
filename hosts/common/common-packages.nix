@@ -61,7 +61,6 @@ in
     kopia-ui
     atuin
     syncthing-macos
-    grayjay
 
     # requires nixpkgs.config.allowUnfree = true;
     vscode-extensions.ms-vscode-remote.remote-ssh
