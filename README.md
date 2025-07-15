@@ -30,6 +30,8 @@ chmod +x set_mac_name.sh && ./set_mac_name.sh
 chmod +x set_user_name.sh && ./set_user_name.sh
 # See apps unmanaged by nix
 chmod +x list_unmanaged_apps.sh && ./list_unmanaged_apps.sh
+# Open freshly installed apps with brew (and not yet openened)
+chmod +x open-brew-apps.sh && ./open-brew-apps.sh
 ```
 
 ## 🔧 Troubleshoot
@@ -39,3 +41,4 @@ Ignore insecure directories and files and continue [y] or abort compinit [n]?` =
 - ⚠️ Au préalable, il est obligatoire d'autoriser manuellement "terminal" dans les paramètres de sécurité et confidentialité (accès au disque complet) de macOS pour que les commandes d'installations fonctionnent correctement.
 - Après l'installation de nix, il est nécessaire de redémarrer le terminal pour que les changements soient pris en compte.
 - Après l'installation de la configuration, les icônes du dock peuvent être avec un point d'interrogation, il suffit de le redémarrer: `killall Dock`.
+- 
