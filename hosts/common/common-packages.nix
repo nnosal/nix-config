@@ -65,11 +65,11 @@ in
     # VSCODE: MS Extensions (Base)
     vscode-extensions.ms-vscode-remote.remote-ssh
     vscode-extensions.ms-vscode-remote.remote-containers
-    vscode-extensions.MS-CEINTL.vscode-language-pack-fr
-    vscode-extensions.zokugun.vsix-manager
+    #vscode-extensions.MS-CEINTL.vscode-language-pack-fr
+    #vscode-extensions.zokugun.vsix-manager
     # VSCODE: Other Extensions
-    vscode-extensions.PKief.material-icon-theme
-    vscode-extensions.alefragnani.project-manager
-    vscode-extensions.WordPressPlayground.wordpress-playground
+    #vscode-extensions.PKief.material-icon-theme
+    #vscode-extensions.alefragnani.project-manager
+    #vscode-extensions.WordPressPlayground.wordpress-playground
   ];
 }
