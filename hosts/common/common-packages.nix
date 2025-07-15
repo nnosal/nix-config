@@ -21,21 +21,13 @@ in
     #duf # Modern Unix `df`
     #entr # Modern Unix `watch`
     #esptool
-    #fastfetch
-    #fd
-    #ffmpeg
     #figurine
-    #gh
     #git-crypt
     #gnused
     #go
     #hugo
     #iperf3
     #ipmitool
-    #jetbrains-mono # font
-    #jq
-    #just
-    #kubectl
     #mc
     #mosh
     #nmap
@@ -45,13 +37,31 @@ in
     #television
     #terraform
     
+    fd
+    stow
+    fastfetch
+    gh
+    ffmpeg
     tree
     unzip
     watch
     wget
     wireguard-tools
     zoxide
-    ripgrep
+    kubectl
+    jetbrains-mono # font
+    ripgrep-all # replace and improve: ripgrep
+    yq-go # replace and improve: jq
+    go-task # replace and improve: just
+    mise
+    gum
+    bun
+    uv
+    rclone
+    kopia-ui
+    atuin
+    syncthing-macos
+    grayjay
 
     # requires nixpkgs.config.allowUnfree = true;
     vscode-extensions.ms-vscode-remote.remote-ssh
